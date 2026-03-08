@@ -5,7 +5,7 @@
 
 A companion application for **Bungie's Marathon** that provides players with access to game data such as items, gear, and builds through a searchable database.
 
-The goal of this project is to create a clean and scalable backend for exploring Marathon game data while leaving room for future frontend and community-driven tools.
+The goal of this project is to create a clean and scalable full-stack web application for exploring Marathon game data while leaving room for future community-driven tools.
 
 ---
 
