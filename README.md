@@ -45,7 +45,7 @@ Update the values as needed for your local environment.
 ### 4. Start the application
 
 ```bash
-node index.js
+npm start
 ```
 
 ---
