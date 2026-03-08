@@ -40,12 +40,31 @@ copy .env.example .env
 
 Update the values as needed for your local environment.
 
+### 4. Database setup
+
+This project requires a running PostgreSQL instance (for now).
+
+Create a database named `marathon`, then run the schema file:
+
+```bash
+psql -U postgres -d marathon -f scripts/schema.sql
+```
+
+
 ---
 
-### 4. Start the application
+### 5. Start the application
 
 ```bash
 npm start
+```
+
+### Development mode (optional)
+
+For development, you can run the server with automatic restarts using `nodemon`:
+
+```bash
+npm run dev
 ```
 
 ---
