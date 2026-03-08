@@ -1,6 +1,6 @@
 # Marathon Companion App
 
-![CI](https://github.com/YOUR_USERNAME/YOUR_REPO_NAME/actions/workflows/ci.yml/badge.svg)
+![CI](https://github.com/ntomlin7/marathon-companion/actions/workflows/ci.yml/badge.svg)
 ![License](https://img.shields.io/badge/license-MIT-blue)
 
 A companion application for **Bungie's Marathon** that provides players with access to game data such as items, gear, and builds through a searchable database.
