@@ -86,13 +86,13 @@ npm install
 
 Create a `.env` file using the provided example.
 
-### Mac / Linux
+## Mac / Linux
 
 ```bash
 cp .env.example .env
 ```
 
-### Windows (PowerShell)
+## Windows (PowerShell)
 
 ```powershell
 copy .env.example .env
