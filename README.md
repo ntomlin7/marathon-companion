@@ -34,15 +34,18 @@ marathon-companion
 │   ├── src
 │   │   └── server.js
 │   │
-│   ├── scripts
-│   │   └── schema.sql
-│   │
 │   ├── package.json
 │   ├── eslint.config.mjs
 │   ├── .prettierrc
 │   └── .prettierignore
 │
+├── scripts
+│   └── schema.sql
+│
 ├── docs
+│
+├── .env.example
+├── .gitignore
 └── README.md
 ```
 
@@ -110,6 +113,11 @@ createdb marathon
 ```
 
 Run the schema file:
+
+```bash
+psql marathon -f scripts/schema.sql
+```
+On Windows, you may need to specify the `postgres` user:
 
 ```bash
 psql -U postgres -d marathon -f scripts/schema.sql
