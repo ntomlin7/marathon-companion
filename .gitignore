@@ -27,3 +27,7 @@ Thumbs.db
 .vscode/
 !.vscode/settings.json
 .idea/
+
+#Docs (for me)
+progress-context.md
+project-context.md
