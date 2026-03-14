@@ -9,23 +9,23 @@ The goal of this project is to create a clean and scalable full-stack web applic
 
 ---
 
-# Tech Stack
+## Tech Stack
 
-## Backend
+### Backend
 
 - Node.js
 - Express
 - PostgreSQL
 
-## Tooling
+### Tooling
 
 - ESLint
 - Prettier
 - GitHub Actions
 
----
 
-# Project Structure
+
+## Project Structure
 
 ```text
 marathon-companion
@@ -51,48 +51,45 @@ marathon-companion
 
 The backend server lives inside the `server` directory.
 
----
 
-# Requirements
+## Requirements
 
 Before running the project, ensure the following are installed:
 
 - **Node.js 18+**
 - **PostgreSQL 15+**
 
----
 
-# Getting Started
 
-## 1. Clone the repository
+## Getting Started
+
+#### 1. Clone the repository
 
 ```bash
 git clone https://github.com/ntomlin7/marathon-companion.git
 cd marathon-companion
 ```
 
----
 
-## 2. Install backend dependencies
+#### 2. Install backend dependencies
 
 ```bash
 cd server
 npm install
 ```
 
----
 
-## 3. Configure environment variables
+#### 3. Configure environment variables
 
 Create a `.env` file using the provided example.
 
-## Mac / Linux
+##### Mac / Linux
 
 ```bash
 cp .env.example .env
 ```
 
-## Windows (PowerShell)
+##### Windows (PowerShell)
 
 ```powershell
 copy .env.example .env
@@ -100,9 +97,8 @@ copy .env.example .env
 
 Update the values for your local environment.
 
----
 
-## 4. Database setup
+#### 4. Database setup
 
 Ensure PostgreSQL is running.
 
@@ -125,9 +121,8 @@ psql -U postgres -d marathon -f scripts/schema.sql
 
 This initializes the database schema used by the backend.
 
----
 
-## 5. Start the server
+#### 5. Start the server
 
 ```bash
 npm start
@@ -135,7 +130,6 @@ npm start
 
 The server will start on the port defined in your `.env`.
 
----
 
 ## Development Mode
 
@@ -147,9 +141,8 @@ npm run dev
 
 This uses **nodemon** to reload the server when files change.
 
----
 
-# Development Scripts
+## Development Scripts
 
 | Command                | Description                          |
 | ---------------------- | ------------------------------------ |
@@ -159,9 +152,8 @@ This uses **nodemon** to reload the server when files change.
 | `npm run format`       | Format files using Prettier          |
 | `npm run format:check` | Check formatting (used in CI)        |
 
----
 
-# Code Quality
+## Code Quality
 
 This project enforces consistent code style using:
 
@@ -171,50 +163,46 @@ This project enforces consistent code style using:
 
 Formatting is automatically applied according to the project's Prettier configuration.
 
----
 
-# Environment Variables
+## Environment Variables
 
 | Variable     | Description                  |
 | ------------ | ---------------------------- |
 | PORT         | Port the application runs on |
 | DATABASE_URL | PostgreSQL connection string |
 
----
 
-# Roadmap
+## Roadmap
 
 Planned features and improvements for the project:
 
-## Backend
+### Backend
 
 - Item database population
 - Item stats and modifiers
 - API endpoints for game data
 - Search and filtering support
 
-## Frontend
+### Frontend
 
 - Web interface for browsing items
 - Build / loadout planning tools
 - Item comparison features
 
-## Future Ideas
+### Future Ideas
 
 - Community build sharing
 - Map and extraction data
 - Public API for third-party tools
 
----
 
-# Development Notes
+## Development Notes
 
 - The project structure is **still evolving**.
 - Database data will initially be populated manually until an official API becomes available.
 - The architecture is designed to remain flexible as new game data becomes available.
 
----
 
-# License
+## License
 
 MIT
