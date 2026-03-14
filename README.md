@@ -81,45 +81,35 @@ npm install
 
 ### 3. Configure environment variables
 
-Create a `.env` file using the provided example.
-
-##### Mac / Linux
+- Create a `.env` file using the provided example.
 
 ```bash
 cp .env.example .env
 ```
 
-##### Windows (PowerShell)
-
-```powershell
-copy .env.example .env
-```
-
-Update the values for your local environment.
+- Update the values for your local environment.
 
 
 ### 4. Database setup
 
-Ensure PostgreSQL is running.
-
-Create the database:
+- Ensure PostgreSQL is running and create the database.
 
 ```bash
 createdb marathon
 ```
 
-Run the schema file:
+- Run the schema file:
 
 ```bash
 psql marathon -f scripts/schema.sql
 ```
-On Windows, you may need to specify the `postgres` user:
+- On Windows, you may need to specify the `postgres` user:
 
 ```bash
 psql -U postgres -d marathon -f scripts/schema.sql
 ```
 
-This initializes the database schema used by the backend.
+- This initializes the database schema used by the backend.
 
 
 ### 5. Start the server
@@ -128,18 +118,18 @@ This initializes the database schema used by the backend.
 npm start
 ```
 
-The server will start on the port defined in your `.env`.
+- The server will start on the port defined in your `.env`.
 
 
 ## Development Mode
 
-For development, run the server with automatic restarts:
+- For development, run the server with automatic restarts:
 
 ```bash
 npm run dev
 ```
 
-This uses **nodemon** to reload the server when files change.
+- This uses **nodemon** to reload the server when files change.
 
 
 ## Development Scripts
