@@ -65,7 +65,7 @@ Before running the project, ensure the following are installed:
 
 ```bash
 git clone https://github.com/ntomlin7/marathon-companion.git
-cd YOUR_REPO_NAME
+cd marathon-companion
 ```
 
 ---
