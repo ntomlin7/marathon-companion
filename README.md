@@ -63,7 +63,7 @@ Before running the project, ensure the following are installed:
 
 ## Getting Started
 
-#### 1. Clone the repository
+### 1. Clone the repository
 
 ```bash
 git clone https://github.com/ntomlin7/marathon-companion.git
@@ -71,7 +71,7 @@ cd marathon-companion
 ```
 
 
-#### 2. Install backend dependencies
+### 2. Install backend dependencies
 
 ```bash
 cd server
@@ -79,7 +79,7 @@ npm install
 ```
 
 
-#### 3. Configure environment variables
+### 3. Configure environment variables
 
 Create a `.env` file using the provided example.
 
@@ -98,7 +98,7 @@ copy .env.example .env
 Update the values for your local environment.
 
 
-#### 4. Database setup
+### 4. Database setup
 
 Ensure PostgreSQL is running.
 
@@ -122,7 +122,7 @@ psql -U postgres -d marathon -f scripts/schema.sql
 This initializes the database schema used by the backend.
 
 
-#### 5. Start the server
+### 5. Start the server
 
 ```bash
 npm start
